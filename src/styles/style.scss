@@ -1,0 +1,255 @@
+@import "./mixinsAndReset.scss";
+@import "./header.scss";
+@import "./section__top.scss";
+@import "./section__solution.scss";
+@import "./section__explore-specialists.scss";
+@import "./section__services.scss";
+@import "./section__doctors.scss";
+@import "./section--mobile-app.scss";
+@import "./section--reviews.scss";
+@import "./section--appointment.scss";
+@import "./section--footer.scss";
+@import "./footer.scss";
+
+@mixin flexGeneral ($alignItens: center, $justifyContent: space-between) {
+    display: flex;
+    align-items: $alignItens;
+    justify-content: $justifyContent;
+    flex-wrap: wrap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+section,
+footer {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    background: rgba(241, 249, 255, 1);
+}
+
+.wrap {
+    @include flexGeneral($alignItens: stretch, $justifyContent: center);
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5vw 0 0;
+
+    @media (min-width: 1440px) {
+        padding: 80px 0 0;
+    }
+
+    @media (max-width: 1215px) {
+        padding: 5vw 2.5vw 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 5vw 2.5vw 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 7.5vw 2.75vw 0;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    width: 100%;
+    font-weight: 600;
+    margin: 0 0 1.15vw;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+    font-size: 2.7vw;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @media (min-width: 1440px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
+}
+
+.double__block {
+    display: flex;
+    align-items: center;
+}
+
+.double__block--image {
+    @include flexGeneral($alignItens: stretch, $justifyContent: space-between);
+    width: 50%;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+ul {
+    @include flexGeneral($alignItens: stretch, $justifyContent: space-between);
+}
+
+ul li {
+    @include flexGeneral($alignItens: flex-start, $justifyContent: space-between);
+    text-align: center;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+        width: 47.5%;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+ul li h4,
+ul li span {
+    font-size: 1.25vw;
+    padding: 3.5vw 0 0;
+    font-weight: 500;
+    width: 100%;
+
+    @media (min-width: 1440px) {
+        font-size: 24px;
+        padding: 30px 0 0;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        padding: 3.5vw 0 0;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 4vw;
+        padding: 5vw 0 0;
+    }
+}
+
+ul li span {
+    font-size: 1.15vw;
+
+    @media (min-width: 1440px) {
+        font-size: 1vw;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.8vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3.75vw;
+    }
+}
+
+ul li p {
+    margin: 0.75vw 0 0.5vw;
+    width: 80%;
+    color: #454D5D;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 167%;
+
+
+    @media (min-width: 1440px) {
+        font-size: 110%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3vw;
+    }
+}
+
+p {
+    width: 100%;
+    line-height: 167%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.section__header {
+    @include flexGeneral($alignItens: center, $justifyContent: center);
+}
+
+.section__header p {
+    margin: 0 0 0.75vw;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 167%;
+    color: rgba(61, 61, 63, 0.7);
+    width: 50%;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3vw;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 38px;
+        width: 90%;
+    }
+}
+
+.standart--btn {
+    margin: 2vw 0;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.standart--btn a,
+.standart--btn button {
+    color: #fff;
+    background: #40A3F8;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+    font-size: 1.35vw;
+    cursor: pointer;
+
+    @media (min-width: 1440px) {
+        font-size: 120%;
+        padding: 0.5vw 1vw;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2.5vw 5vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3.75vw;
+    }
+}
+
+.image {
+    background-image: url("../assets/images/Icons/Cardiology.png");
+}

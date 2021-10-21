@@ -1,0 +1,59 @@
+.appointment__main {
+    width: 100%;
+    background: rgb(64, 163, 248);
+    background: linear-gradient(0deg, rgba(64, 163, 248, 1) 75%, rgba(241, 249, 255, 1) 75%);
+    border-radius: 12px;
+    color: #fff;
+
+    @media (max-width: 768px) {
+        background: rgb(64, 163, 248);
+    }
+}
+
+.appointment__external {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.appointment__external h2 {
+    text-align: left;
+    width: 80%;
+    font-weight: 700;
+    margin: 2vw 0 1.15vw;
+}
+
+.appointment__book {
+    width: 80%;
+    display: block;
+    padding: 0 0 0.5vw;
+}
+
+.appointment__book-btn {
+    width: 50%;
+    background: #fff;
+    color: #40A3F8;
+    border-radius: 8px;
+    font-size: 1.35vw;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    text-align: center;
+
+    @media (min-width: 1440px) {
+        font-size: 110%;
+        padding: 0.5vw 1vw;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2vw 4vw;
+        width: 100%;
+        font-size: 2.8vw;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.8vw;
+    }
+}

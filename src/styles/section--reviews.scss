@@ -1,0 +1,86 @@
+.section__doctors .section__header img {
+    margin: 0 0 1.15vw;
+}
+
+.section__header--img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__list {
+    padding: 3.5vw 0 0;
+
+    @media (min-width: 1440px) {
+        padding: 50px 0 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 6vw 0 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 7vw 0 0;
+    }
+}
+
+.slider__list ul li {
+    padding: 0.75vw 0 1vw;
+    width: 30%;
+    background-color: #fff;
+    position: relative;
+
+    @media (max-width: 768px) {
+        margin: 2vw 0;
+        padding: 2.25vw 0 0;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 2.25vw 0 0;
+    }
+}
+
+.slider__list ul li p{
+    height: 50%;
+}
+
+
+.slider__list img {
+    border-radius: 50%;
+}
+
+.slider__list ul li::before{
+    position: absolute;
+    content: url("../assets/images/Icons/Quote.png");
+    top: -5%;
+    right: 5%;
+}
+
+.slider__name-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slider__name-inner{
+    width: 70%;
+}
+
+.stars__rate{
+    width: 30%;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .slider__name-inner {
+        width: 100%;
+    }
+
+    .stars__rate{
+        width: 100%;
+    }
+}

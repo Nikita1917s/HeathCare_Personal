@@ -1,0 +1,77 @@
+.section__explore-specialists .container {
+    padding: 0%;
+
+    @media (max-width: 768px) {
+        padding: 3.5vw 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 5vw 0;
+    }
+}
+
+.explore-specialists__info {
+    padding-left: 1.5vw;
+    width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.explore-specialists__info p {
+    margin: 0 0 0.75vw;
+    text-align: left;
+    font-size: 1.25vw;
+    color: rgba(61, 61, 63, 0.7);
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 4vw;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 110%;
+    }
+}
+
+.explore-specialists__info ul {
+    padding: 0 0 0 5%;
+
+    @media (max-width: 768px) {
+        padding: 0 0 0 3%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 0 0 5%;
+    }
+}
+
+.explore-specialists__info li {
+    display: list-item;
+    list-style-position: outside;
+    list-style-image: url('../assets/images/Icons/Vector.png');
+    margin: 0 0 0.25vw;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 167%;
+    color: #3D3D3F;
+    width: 100%;
+    text-align: start;
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 4vw;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 120%;
+    }
+}

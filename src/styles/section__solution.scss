@@ -1,0 +1,67 @@
+.solution__main ul li {
+    justify-content: center;
+    padding: 0 2vw;
+    width: 30%;
+}
+
+.solution__main ul li p {
+    margin: 0 0 4vw;
+    color: rgba(61, 61, 63, 0.7);
+    padding: 3.5vw 0 0;
+    align-self: flex-end;
+    height: 50%;
+
+    @media (min-width: 1440px) {
+        padding: 40px 0 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 5vw 0 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 6vw 0 0;
+    }
+}
+
+.solution__inner-img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width: 1440px) {
+        padding: 1.75vw;
+    }
+
+    @media (max-width: 768px) {
+        padding: 3.75vw;
+        background-size: 75%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 4vw;
+    }
+
+}
+
+.solution__search {
+    background: #a9f8f8;
+    background-image: url('../assets/images/Icons/search-icon-mini1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.solution__appointment {
+    background: #53ce90;
+    background-image: url('../assets/images/Icons/calendar-icon-mini.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.solution__consultations {
+    background: #a9f8f8;
+    background-image: url('../assets/images/Icons/online-icon-mini.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,224 @@
+.section__top {
+    padding: 5vw 0 0;
+    background: rgba(241, 249, 255, 1);
+
+    @media (min-width: 1440px) {
+        padding: 80px 0 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 7.5vw 0 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 10vw 0 0;
+    }
+}
+
+.top__search-big,
+.main-big {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top__search-big,
+.image-big,
+.main-big {
+    width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.top__search-image {
+    width: 50%;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.search-big__title {
+    width: 90%;
+    margin: 0 0 3vw;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.search-big__title-text {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 2.7vw;
+    z-index: 30;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    @media (min-width: 1440px) {
+        font-size: 47px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
+}
+
+.main-font {
+    color: #40A3F8;
+}
+
+.search-big__text {
+    width: 90%;
+    margin: 0 0 4vw;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 214%;
+    color: rgba(61, 61, 63, 0.7);
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 4vw;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 120%;
+    }
+}
+
+.search-big__serch-field {
+    padding: 1vw;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 2vw;
+    }
+}
+
+.search-field__doctor-input {
+    border-radius: 8px;
+    padding: 1vw 0 1vw 2vw;
+    font-size: 1.25vw;
+    width: 42.5%;
+    background: rgba(232, 236, 252, 0.52);
+    border: none;
+
+    @media (min-width: 1440px) {
+        font-size: 120%;
+        padding: 0.5vw 0 0.5vw 1vw;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.25vw;
+        padding: 1.5vw 0 1.5vw 4vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3vw;
+        padding: 2.6vw 0 2.6vw 5vw;
+    }
+}
+
+.search-field-container {
+    width: 42.5%;
+    position: relative;
+    display: flex;
+}
+
+.search-field__doctor-select {
+    border: none;
+    border-radius: 8px;
+    padding: 1vw 0 1vw 2vw;
+    width: 100%;
+    font-size: 1.35vw;
+    cursor: pointer;
+    background: rgba(232, 236, 252, 0.52);
+
+    @media (min-width: 1440px) {
+        font-size: 120%;
+        padding: 0.5vw 0 0.5vw 1vw;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+        padding: 2vw 0 2vw 4vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3vw;
+        padding: 2.5vw 0 2.5vw 5vw;
+    }
+}
+
+.search-field-container::before {
+    z-index: 2;
+    position: absolute;
+    content: url('../assets/images/Icons/location.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 30%;
+    left: 2%;
+    background-size: cover;
+
+    @media (min-width: 1440px) {
+        top: 31%;
+        left: 1%;
+    }
+
+    @media (max-width: 768px) {
+        transform: scale(1.25);
+        top: 2vw;
+        left: 1.25vw;
+    }
+
+    @media (max-width: 480px) {
+        transform: scale(.75);
+        top: 2vw;
+        left: 0.75vw;
+    }
+}
+
+.search-field__doctor-search {
+    display: inline-block;
+    padding: 2vw;
+    background: #40A3F8;
+    background-image: url('../assets/images/Icons/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: 75%;
+
+    @media (min-width: 1440px) {
+        padding: 1.5vw;
+    }
+
+    @media (min-width: 2000px) {
+        padding: 1.25vw;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2.75vw;
+    }
+
+    @media (max-width: 480px) {
+        padding: 3.25vw;
+    }
+}

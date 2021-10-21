@@ -1,0 +1,139 @@
+.section--footer {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .appointment__main img {
+        display: none;
+    }
+}
+
+.footer__main ul li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer__contacts {
+    width: 40%;
+    text-align: left;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.footer__contacts h3 {
+    width: 70%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.footer__contacts p {
+    text-align: left;
+    color: #646464;
+    padding: 0 0 0.5vw;
+    width: 70%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.footer__social ul {
+    width: 70%;
+    flex-wrap: nowrap;
+    margin: 0 0 2vw;
+}
+
+.fb-icon__black {
+    background: no-repeat url('../assets/images/Icons/Fb__black.png');
+    background-position: center;
+}
+
+.in-icon__black {
+    background: no-repeat url('../assets/images/Icons/Instagram__black.png');
+    background-position: center;
+}
+
+.tw-icon__black {
+    background: no-repeat url('../assets/images/Icons/Twitter__black.png');
+    background-position: center;
+}
+
+.yt-icon__black {
+    background: no-repeat url('../assets/images/Icons/Youtube__black.png');
+    background-position: center;
+}
+
+.footer__category {
+    width: 15%;
+
+    @media (max-width: 768px) {
+        order: 2;
+        width: 50%;
+        margin: 1.5vw 0;
+    }
+}
+
+.footer__category ul {
+    flex-direction: column;
+}
+
+.footer__category li {
+    margin: 0.35vw 0;
+    color: #646464;
+}
+
+.footer__subscribe {
+    width: 30%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 1.5vw 0;
+    }
+
+    @media (max-width: 480px) {
+        margin: 2.5vw 0;
+    }
+}
+
+.footer__subscribe b {
+    margin: 0.35vw 0;
+}
+
+.footer__subscribe p {
+    margin: 1vw 0;
+    width: 85%;
+}
+
+.footer__subscribe input {
+    width: 85%;
+    padding: 0.5vw 0 0.5vw 1vw;
+
+    @media (max-width: 768px) {
+        margin: 2vw 0;
+    }
+}
+
+
+.footer__category b a,
+.footer__subscribe b a {
+    font-weight: 700;
+    color: #000;
+}
+
+.subscribe-btn {
+    margin: 1vw 0;
+    width: 85%;
+}
+
+.subscribe-btn a {
+    display: block;
+    width: 100%;
+}
